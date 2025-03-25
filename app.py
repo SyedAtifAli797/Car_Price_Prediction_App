@@ -6,7 +6,7 @@ import os
 
 cwd = os.getcwd()
 Model = joblib.load(os.path.join(cwd, "model.joblib"))
-make_enc = joblib.load(os.path.join(cwd, "make_enc.joblib"))
+make_enc = joblib.load("make_enc.joblib")
 model_enc = joblib.load(os.path.join(cwd, "model_enc.joblib"))
 scaler = joblib.load(os.path.join(cwd, "scaler.joblib"))
 
